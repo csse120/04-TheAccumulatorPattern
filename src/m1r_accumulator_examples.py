@@ -4,18 +4,102 @@ This module demonstrates the ACCUMULATOR pattern in three classic forms:
    COUNTING:      count = count + 1
    IN GRAPHICS:   x = x + pixels
 
-Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         Mark Hays and their colleagues.
-"""
-# ----------------------------------------------------------------------
-# Students: Read and run this program.  There is nothing else
-#           for you to do in here.  Just use it as an example.
-#           Before you leave this example:
-########################################################################
-#   *** MAKE SURE YOU UNDERSTAND THE 3   ACCUMULATOR   PATTERNS      ***
-#   *** shown in this module:  SUMMING, COUNTING, and IN GRAPHICS    ***
-########################################################################
-# ----------------------------------------------------------------------
+Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
+         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+
+###############################################################################
+#
+# TODO: 2.
+#   RUN this program, then READ its code.
+#     Then answer the following, GETTING HELP AS NEED!  (Ask questions!!!)
+#     Write your answers in any reasonable way (your choice).
+#
+#     For the first several questions, some students find the following picture
+#     helpful.  (Your instructor may explain it in whole-group.)
+#
+#         0  1  2  3  4  ...  r-1  r  r+1  r+2  r+3  ...  s
+#         |..... r numbers .....|
+#         |................ s+1 numbers ..................|
+# Hence:                          |... (s+1)-r numbers ...|
+#
+#     a. If you want a loop that runs   r   times,
+#          which of the following three choices would you use?
+#
+#            for k in range(r - 1):
+#            for k in range(r):
+#            for k in range(r + 1):
+#
+#     b. If you want a loop that runs from 0 to s, inclusive,
+#          what expression would you use in the _____ below?
+#
+#            for k in range(_____):
+#
+#     c. If you want a loop that runs from r to s, inclusive, assuming s >= r,
+#          what expression would you use in the _____ below?
+#
+#            for k in range(_____):
+#
+#     d. If you want a loop that runs from (r + 4) to (s - 10),
+#          including the (r + 4) but not including the (s - 10),
+#          what expression would you use in the _____ below?
+#
+#            for k in range(_____):
+#
+#     e. The following code snippet attempts to return the number
+#          of integers from r to s, inclusive, whose cosines are positive.
+#          It has at least 5 distinct errors (one per line).  What are they?
+#
+#              for k in range(r - s):
+#                  count = 0
+#                  if math.cos(r) > 0:
+#                      count = 1
+#                  return count
+#
+#     f. The code in the "graphics accumulation" example below includes:
+#            for _ in range(n):
+#        What does the   _   (underscore) mean?
+#
+#     g. The code in the "graphics accumulation" example below includes:
+#
+#              x = starting_point.x
+#              for _ in range(n):
+#                  center = rg.Point(x, y)
+#                  circle = rg.Circle(point, radius)
+#                  circle.attach_to(window)
+#                  x = x + diameter
+#
+#        If you want the row-of-circles that the above creates,
+#        one of the following two attempts is a CORRECT attempt
+#        (i.e., is equivalent in its functionality to the above)
+#        and one is WRONG.  Which is the WRONG one?
+#
+#              x = starting_point.x
+#              for k in range(n):
+#                  center = rg.Point(x + (k * diameter), y)
+#                  circle = rg.Circle(point, radius)
+#                  circle.attach_to(window)
+#
+#              x = starting_point.x
+#              for k in range(n):
+#                  center = rg.Point(x + (k * diameter), y)
+#                  circle = rg.Circle(point, radius)
+#                  circle.attach_to(window)
+#                  x = x + (2 * radius)
+#
+###############################################################################
+#   *** MAKE SURE YOU UNDERSTAND THE 3   ACCUMULATOR   PATTERNS    ***
+#   *** shown in this module:  SUMMING, COUNTING, and IN GRAPHICS  ***
+###############################################################################
+#
+#   When you are confident that you understand the 3 accumulator patterns
+#   and have correct answers to the above questions (ASK QUESTIONS AS NEEDED!),
+#   check your work by asking a student assistant to look at your answers.
+#
+#   After checking your work (making corrections as needed),
+#   change the above _TODO_ to DONE.
+#
+###############################################################################
 
 import rosegraphics as rg
 import math
@@ -69,7 +153,7 @@ def summing_example(n):
     for k in range(n):  # Loop
         total = total + ((k + 1) ** 3)  # Accumulate INSIDE the loop.
 
-    return total
+    return total  # Return the result AFTER the loop
 
 
 def run_test_counting_example():
@@ -110,8 +194,8 @@ def counting_example(n):
              and   the cosine(2) is about -0.42 (negative)
 
       -- counting_example(20) returns 11
-             since the cosines of 1, 5, 6, 7, 11, 12, 13, 14, 18, 19
-             and 20 are positive
+             since the cosines of 1, 5, 6, 7, 11, 12, 13, 14, 18, 19 and 20
+             are positive
 
       -- counting_example(0) returns 0
              since the cosine(0) is not positive.
@@ -121,7 +205,7 @@ def counting_example(n):
         if math.cos(k + 1) > 0:  # If the condition holds:
             count = count + 1  # Increment INSIDE the loop.
 
-    return count
+    return count  # Return the result AFTER the loop
 
 
 def run_test_draw_row_of_circles():
@@ -161,7 +245,7 @@ def run_test_draw_row_of_circles():
     window2.close_on_mouse_click()
 
 
-def draw_row_of_circles(n, point, color, window):
+def draw_row_of_circles(n, starting_point, color, window):
     """
     What comes in:  The four arguments are:
       -- A positive integer n.
@@ -170,19 +254,19 @@ def draw_row_of_circles(n, point, color, window):
       -- An rg.RoseWindow.
     What goes out:  Nothing (i.e., None).
     Side effects:
-      Draws  n  rg.Circles in a row, all on the given rg.RoseWindow,
-      such that:
-        -- The first rg.Circle is centered at the given point.
+      Draws  n  rg.Circle objects in a row,
+      all on the given rg.RoseWindow, such that:
+        -- The first rg.Circle is centered at the given starting_point.
         -- Each rg.Circle just touches the previous one (to its left).
         -- Each rg.Circle has radius 20.
         -- Each rg.Circle is filled with the given color.
       Must  ** render **     but   ** NOT close **   the rg.RoseWindow.
 
      Type hints:
-      :type n:      int
-      :type point:  rg.Point
-      :type color:  str
-      :type window: rg.RoseWindow
+      :type n:               int
+      :type starting_point:  rg.Point
+      :type color:           str
+      :type window:          rg.RoseWindow
     """
     # ------------------------------------------------------------------
     # The example below shows one way to solve problems using
@@ -194,7 +278,7 @@ def draw_row_of_circles(n, point, color, window):
     #  2. You initialize them BEFORE the loop, choosing values that
     #       make them just right for constructing and drawing the
     #       FIRST object to be drawn, in the FIRST time through the loop.
-    #       For example,   x = point.x   in the example below.
+    #       For example,   x = starting_point.x   in the example below.
     #  3. You determine how many times the loop should run
     #       (generally, however many objects you want to draw)
     #       and write the FOR statement for the loop.
@@ -203,11 +287,11 @@ def draw_row_of_circles(n, point, color, window):
     #       draw the FIRST object to be drawn, using your helper
     #       variables.  This is easy because you chose just the right
     #       values for those helper variables for this FIRST object.
-    #  5. Test: Make sure the FIRST object appears (it will be redrawn
-    #       many times, that is OK).
+    #  5. Test: Make sure the FIRST object appears.
+    #       (It will be redrawn many times, that is OK).
     #  6. Add code at the BOTTOM of the loop that changes the helper
     #       variables appropriately for the NEXT time through the loop.
-    #       For example,   x = x + (radius * 2)   in the example below.
+    #       For example,   x = x + diameter   in the example below.
     #  7. Test and fix as needed.
     #
     # Many students (and professionals) find this technique less
@@ -215,9 +299,10 @@ def draw_row_of_circles(n, point, color, window):
     # ------------------------------------------------------------------
 
     radius = 20
+    diameter = 2 * radius
 
-    x = point.x  # Initialize x and y BEFORE the loop
-    y = point.y  # Choose values that make the FIRST object easy to draw
+    x = starting_point.x  # Initialize x and y BEFORE the loop.  Choose ...
+    y = starting_point.y  # ... values that make the FIRST object easy to draw.
 
     for _ in range(n):  # Loop that does NOT use its index variable
 
@@ -225,8 +310,8 @@ def draw_row_of_circles(n, point, color, window):
         # Construct the relevant object(s),
         # based on the current x, y and other variables.
         # --------------------------------------------------------------
-        point = rg.Point(x, y)
-        circle = rg.Circle(point, radius)
+        center = rg.Point(x, y)
+        circle = rg.Circle(center, radius)
         circle.fill_color = color
 
         # Attach the object(s) to the window.
@@ -236,7 +321,7 @@ def draw_row_of_circles(n, point, color, window):
         # Increment x (and in other problems, other variables)
         # for the thing(s) to draw in the NEXT iteration of the loop.
         # --------------------------------------------------------------
-        x = x + (radius * 2)
+        x = x + diameter
 
     window.render()
 
