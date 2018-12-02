@@ -15,8 +15,8 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #     Then answer the following, GETTING HELP AS NEED!  (Ask questions!!!)
 #     Write your answers in any reasonable way (your choice).
 #
-#     For the first several questions, some students find the following picture
-#     helpful.  (Your instructor may explain it in whole-group.)
+#     For the first several questions, some students find the following
+#     picture helpful.  (Your instructor may explain it in whole-group.)
 #
 #         0  1  2  3  4  ...  r-1  r  r+1  r+2  r+3  ...  s
 #         |..... r numbers .....|
@@ -164,19 +164,19 @@ def run_test_counting_example():
     print('--------------------------------------------------')
 
     # Test 1:
-    expected = 1
+    expected = 2
     answer = counting_example(2)
     print('Test 1 expected:', expected)
     print('       actual:  ', answer)
 
     # Test 2:
-    expected = 11
+    expected = 12
     answer = counting_example(20)
     print('Test 2 expected:', expected)
     print('       actual:  ', answer)
 
     # Test 3:
-    expected = 0
+    expected = 1
     answer = counting_example(0)
     print('Test 3 expected:', expected)
     print('       actual:  ', answer)
@@ -185,24 +185,25 @@ def run_test_counting_example():
 def counting_example(n):
     """
     What comes in:  The sole argument is a non-negative integer n.
-    What goes out:  Returns the number of integers from 1 to n,
+    What goes out:  Returns the number of integers from 0 to n,
       inclusive, whose cosine is positive.
     Side effects:   None.
     Examples:
-      -- counting_example(2) returns 1
-             since the cosine(1) is about 0.54 (positive)
+      -- counting_example(2) returns 2
+             since the cosine(0) is 1 (positive)
+             and   the cosine(1) is about 0.54 (positive)
              and   the cosine(2) is about -0.42 (negative)
 
-      -- counting_example(20) returns 11
-             since the cosines of 1, 5, 6, 7, 11, 12, 13, 14, 18, 19 and 20
+      -- counting_example(20) returns 12
+             since the cosines of 0, 1, 5, 6, 7, 11, 12, 13, 14, 18, 19 and 20
              are positive
 
-      -- counting_example(0) returns 0
-             since the cosine(0) is not positive.
+      -- counting_example(0) returns 1
+             since the cosine(0) is positive.
     """
     count = 0  # Initialize to 0 BEFORE the loop
-    for k in range(n):  # Loop
-        if math.cos(k + 1) > 0:  # If the condition holds:
+    for k in range(n + 1):  # Loop
+        if math.cos(k) > 0:  # If the condition holds:
             count = count + 1  # Increment INSIDE the loop.
 
     return count  # Return the result AFTER the loop
