@@ -92,7 +92,7 @@ def sum_more_cosines(m, n):
     #   of the RANGE expression, if you happen to know them.
     #   That is, no fair using   range(m, n)   or anything like that.
     #   Just   range(blah)   where blah is a single variable.
-    #   Reason: To ensure that you get more practice using variables.
+    #   Reason: To ensure that you get more practice using expressions.
     # ------------------------------------------------------------------
 
 
