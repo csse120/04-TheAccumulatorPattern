@@ -15,7 +15,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 import rosegraphics as rg
 
 
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Students: As you work each of these problems, ask yourself:
 #   1. Do I need a loop?
 #      If so, HOW MANY LOOPS?
@@ -24,7 +24,7 @@ import rosegraphics as rg
 #        -- BEFORE the loop?
 #        -- IN the loop?
 #        -- AFTER the loop?
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_draw_squares_from_circle()
@@ -40,9 +40,9 @@ def run_test_draw_squares_from_circle():
     print('  See the graphics windows that pop up.')
     print('--------------------------------------------------')
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TWO tests on ONE window.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     title = 'Tests 1 and 2 of DRAW_SQUARES_FROM_CIRCLE: '
     title = title + ' 7 little squares from green circle, 4 big squares'
     window1 = rg.RoseWindow(650, 350, title)
@@ -57,9 +57,9 @@ def run_test_draw_squares_from_circle():
     draw_squares_from_circle(4, circle, window1)
     window1.close_on_mouse_click()
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # A third test on ANOTHER window.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     title = 'Test 3 of DRAW_SQUARES_FROM_CIRCLE: '
     title += ' 20 teeny squares from blue circle!'
     window2 = rg.RoseWindow(525, 300, title)
@@ -97,7 +97,7 @@ def draw_squares_from_circle(n, circle, window):
       :type circle: rg.Circle
       :type window: rg.RoseWindow
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     #
@@ -105,12 +105,12 @@ def draw_squares_from_circle(n, circle, window):
     #             as in   draw_row_of_circles   in m1e,
     #             instead of directly using the loop variable.
     #
-    ####################################################################
+    ###########################################################################
     # HINT: To figure out the code that computes the necessary
     #       positions of each square,
     #          ** FIRST DO A CONCRETE EXAMPLE BY HAND! **
-    ####################################################################
-    # ------------------------------------------------------------------
+    ###########################################################################
+    # -------------------------------------------------------------------------
 
 
 def run_test_draw_circles_from_rectangle():
@@ -121,19 +121,19 @@ def run_test_draw_circles_from_rectangle():
     print('  See the graphics windows that pop up.')
     print('--------------------------------------------------')
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 3. Implement this TEST function.
     #   It TESTS the  draw_circles_from_rectangle  function
     #   defined below.  Include at least **   3   ** tests, of which
     #      ***  at least TWO tests are on ONE window and
     #      ***  at least ONE test is on a DIFFERENT window.
     #
-    ####################################################################
+    ###########################################################################
     # HINT: Consider using the same test cases as suggested by the
     #   pictures in  draw_circles_from_rectangle.pdf   in this project.
     #   Follow the same form as the example in a previous problem.
-    ####################################################################
-    # ------------------------------------------------------------------
+    ###########################################################################
+    # -------------------------------------------------------------------------
 
 
 def draw_circles_from_rectangle(m, n, rectangle, window):
@@ -175,7 +175,7 @@ def draw_circles_from_rectangle(m, n, rectangle, window):
       :type rectangle: rg.Rectangle
       :type window: rg.RoseWindow
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
     #
@@ -183,12 +183,12 @@ def draw_circles_from_rectangle(m, n, rectangle, window):
     #             as in   draw_row_of_circles   in m1e,
     #             instead of directly using the loop variable.
     #
-    ####################################################################
+    ###########################################################################
     # HINT: To figure out the code that computes the necessary
     #       positions of each circle,
     #          ** FIRST DO A CONCRETE EXAMPLE BY HAND! **
-    ####################################################################
-    # ------------------------------------------------------------------
+    ###########################################################################
+    # -------------------------------------------------------------------------
 
 
 def run_test_draw_lines_from_rectangles():
@@ -267,7 +267,7 @@ def draw_lines_from_rectangles(rectangle1, rectangle2, n, window):
       :type n: int
       :type window: rg.RoseWindow
       """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
     #          Tests have been written for you (above).
     #
@@ -275,15 +275,15 @@ def draw_lines_from_rectangles(rectangle1, rectangle2, n, window):
     #             as in   draw_row_of_circles   in m1e,
     #             instead of directly using the loop variable.
     #
-    ####################################################################
+    ###########################################################################
     # HINT: To figure out the code that computes the necessary
     #       endpoints for each line,
     #          ** FIRST DO A CONCRETE EXAMPLE BY HAND! **
-    ####################################################################
-    # ------------------------------------------------------------------
+    ###########################################################################
+    # -------------------------------------------------------------------------
 
 
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 main()

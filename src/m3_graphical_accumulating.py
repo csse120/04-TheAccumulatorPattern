@@ -15,7 +15,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 import rosegraphics as rg
 
 
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Students: As you work each of these problems, ask yourself:
 #   1. Do I need a loop?
 #      If so, HOW MANY LOOPS?
@@ -24,7 +24,7 @@ import rosegraphics as rg
 #        -- BEFORE the loop?
 #        -- IN the loop?
 #        -- AFTER the loop?
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_draw_parallel_lines()
@@ -39,9 +39,9 @@ def run_test_draw_parallel_lines():
     print('  See the graphics windows that pop up.')
     print('--------------------------------------------------')
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TWO tests on ONE window.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     title = 'Tests 1 and 2 of DRAW_PARALLEL_LINES:'
     title = title + '  4 long lines, 7 short lines'
     window1 = rg.RoseWindow(600, 350, title)
@@ -55,9 +55,9 @@ def run_test_draw_parallel_lines():
     draw_parallel_lines(4, left_most_point, 300, window1)
     window1.close_on_mouse_click()
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # A third test on ANOTHER window.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     title = 'Test 3 of DRAW_PARALLEL_LINES:  12 very long lines!'
     window2 = rg.RoseWindow(500, 400, title)
 
@@ -95,7 +95,7 @@ def draw_parallel_lines(n, point, length, window):
       :type length: int
       :type window: rg.RoseWindow
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     #
@@ -103,12 +103,12 @@ def draw_parallel_lines(n, point, length, window):
     #             as in   draw_row_of_circles   in m1e,
     #             instead of directly using the loop variable.
     #
-    ####################################################################
+    ###########################################################################
     # HINT: To figure out the code that computes the necessary
     #       endpoints for each line,
     #          ** FIRST DO A CONCRETE EXAMPLE BY HAND! **
-    ####################################################################
-    # ------------------------------------------------------------------
+    ###########################################################################
+    # -------------------------------------------------------------------------
 
 
 def run_test_draw_lines():
@@ -160,7 +160,7 @@ def draw_lines(n, point, window):
       :type point: rg.Point
       :type window: rg.RoseWindow
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     #
@@ -168,15 +168,15 @@ def draw_lines(n, point, window):
     #             as in   draw_row_of_circles   in m1e,
     #             instead of directly using the loop variable.
     #
-    ####################################################################
+    ###########################################################################
     # HINT: To figure out the code that computes the necessary
     #       endpoints for each line,
     #          ** FIRST DO A CONCRETE EXAMPLE BY HAND! **
-    ####################################################################
-    # ------------------------------------------------------------------
+    ###########################################################################
+    # -------------------------------------------------------------------------
 
 
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 main()
