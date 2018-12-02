@@ -43,8 +43,8 @@ def run_test_sum_more_cosines():
     #   Step 2:  Pick a test case:  numbers that you could send as
     #     actual arguments to the  sum_more_cosines  function.
     #
-    #   Step 3: Figure out (by hand, or by trusting a test case that
-    #     your instructor provided in the doc-string)
+    #   Step 3: Figure out (by hand/calculator, or by trusting
+    #     a test case that your instructor provided in the doc-string)
     #     the CORRECT (EXPECTED) answer for your test case.
     #
     #   Step 4: Write code that prints both the EXPECTED answer
