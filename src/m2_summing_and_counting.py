@@ -201,7 +201,8 @@ def count_sines_vs_cosines(m):
             sine(3)  is about  0.14  and  cosine(3) is about -0.99
             sine(4)  is about -0.76  and  cosine(4) is about -0.65
             sine(5)  is about -0.96  and  cosine(5) is about  0.28
-      -- count_sines_vs_cosines(5) returns 6
+      -- count_sines_vs_cosines(5) returns 6 because
+           for -5, -4, -3, 1, 2, and 3, their sine is larger than their cosine
       -- count_sines_vs_cosines(3) returns 4
       -- count_sines_vs_cosines(0) returns 0
       -- count_sines_vs_cosines(1) returns 1
