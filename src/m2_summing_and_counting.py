@@ -70,7 +70,7 @@ def run_test_sum_more_cosines():
 
 def sum_more_cosines(m, n):
     """
-    What comes in:  The two arguments are integers m and n, with m <= n.
+    What comes in:  Integers m and n, with m <= n.
     What goes out:  Returns the sum
        cos(m) + cos(m+1) + cos(m+2) +  ...  cos(n)
     Side effects:   None.
@@ -125,7 +125,7 @@ def run_test_count_sines_from():
 
 def count_sines_from(m, n):
     """
-    What comes in:  The two arguments are integers m and n, with m <= n.
+    What comes in:  Integers m and n, with m <= n.
     What goes out:  Returns the number of integers from m to n,
        inclusive, whose sine is less than 0.5.
     Side effects:   None.
@@ -181,7 +181,7 @@ def run_test_count_sines_vs_cosines():
 
 def count_sines_vs_cosines(m):
     """
-    What comes in:  The sole argument is a non-negative integer m.
+    What comes in:  A non-negative integer m.
     What goes out:  Returns the number of integers from -m to m,
        inclusive, whose sine is greater than its cosine.
     Side effects:   None.
