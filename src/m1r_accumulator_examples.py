@@ -217,9 +217,9 @@ def run_test_draw_row_of_circles():
     print('  See the graphics windows that pop up.')
     print('--------------------------------------------------')
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TWO tests on ONE window.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     title = 'Tests 1 and 2 of DRAW_ROW_OF_CIRCLES:'
     title = title + ' 7 GREEN circles, 4 BLUE circles!'
     window1 = rg.RoseWindow(500, 250, title)
@@ -233,9 +233,9 @@ def run_test_draw_row_of_circles():
     draw_row_of_circles(4, center, 'blue', window1)
     window1.close_on_mouse_click()
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # A third test on ANOTHER window.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     title = 'Test 3 of DRAW_ROW_OF_CIRCLES:  Row of 12 RED circles!'
     window2 = rg.RoseWindow(600, 150, title)
 
@@ -269,7 +269,7 @@ def draw_row_of_circles(n, starting_point, color, window):
       :type color:           str
       :type window:          rg.RoseWindow
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # The example below shows one way to solve problems using
     #   HELPER variables (aka AUXILIARY variables)
     # In this approach:
@@ -297,7 +297,7 @@ def draw_row_of_circles(n, starting_point, color, window):
     #
     # Many students (and professionals) find this technique less
     # error-prone that using the loop variable to do all the work.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
     radius = 20
     diameter = 2 * radius
@@ -307,10 +307,10 @@ def draw_row_of_circles(n, starting_point, color, window):
 
     for _ in range(n):  # Loop that does NOT use its index variable
 
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # Construct the relevant object(s),
         # based on the current x, y and other variables.
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
         center = rg.Point(x, y)
         circle = rg.Circle(center, radius)
         circle.fill_color = color
@@ -318,16 +318,16 @@ def draw_row_of_circles(n, starting_point, color, window):
         # Attach the object(s) to the window.
         circle.attach_to(window)
 
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # Increment x (and in other problems, other variables)
         # for the thing(s) to draw in the NEXT iteration of the loop.
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
         x = x + diameter
 
     window.render()
 
 
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 main()
