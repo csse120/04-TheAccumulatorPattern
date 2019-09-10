@@ -99,8 +99,8 @@ def run_test_sum_from():
 #     -- what a FORMULA answer is
 #     -- how the above are used in testing
 #   THEN:
-# CHANGE THE _TODO_ at the beginning of this comment to DONE.
-# There is no code to be written for this _TODO_ (just reading).
+#   CHANGE THE _TODO_ at the beginning of this comment to DONE.
+#   here is no code to be written for this _TODO_ (just reading).
 # -----------------------------------------------------------------------------
 
 
@@ -120,9 +120,9 @@ def sum_from(m, n):
     # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
-    #
-    # IMPORTANT:  Your solution MUST
-    #   use an explicit    for ... in range(...):     statement
+    #  ___
+    #  IMPORTANT:  Your solution MUST
+    #    use an explicit    for ... in range(...):     statement
     #
     # IMPORTANT: As in previous problems in this session,
     #   you must NOT use the 2 or 3-parameter versions
@@ -136,7 +136,6 @@ def run_test_factorial():
     # TODO: 4. Implement this TEST function.
     #   It TESTS the  factorial  function defined below.
     #   Include at least **   5   ** tests (we wrote two for you).
-    #
     ###########################################################################
     # IMPORTANT: At least 2 of your tests MUST use the
     #    math.factorial
@@ -162,8 +161,8 @@ def run_test_factorial():
 
     # -------------------------------------------------------------------------
     # TODO: 4 (continued).
-    # Below this comment, add 3 more test cases, at least two of which
-    #   ** uses  math.factorial  as an ORACLE for testing. **
+    #   Below this comment, add 3 more test cases, at least two of which
+    #     ** uses  math.factorial  as an ORACLE for testing. **
     # -------------------------------------------------------------------------
 
 
@@ -182,9 +181,9 @@ def factorial(n):
     # -------------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
-    #
-    # IMPORTANT:  Your solution MUST
-    #   use an explicit    for ... in range(...):     statement.
+    #  ___
+    #  IMPORTANT:  Your solution MUST
+    #    use an explicit    for ... in range(...):     statement.
     # -------------------------------------------------------------------------
 
 
@@ -196,20 +195,20 @@ def run_test_count_cosines_from():
     #   Include at least **   6   ** tests (we wrote one for you).
     #              ** Yes, 6 (six) tests. **
     #     ** Counting problems are harder to test than summing. **
-    #
-    # To implement this TEST function, use the same 4 steps as before:
-    #
+    #   ___
+    #   To implement this TEST function, use the same 4 steps as before:
+    #   ___
     #   Step 1: Read the doc-string of  count_cosines_from  below.
     #     Understand what that function SHOULD return.
-    #
+    #   ___
     #   Step 2:  Pick a test case:  numbers that you could send as
     #     actual arguments to the  count_cosines_from  function.
-    #
+    #   ___
     #   Step 3: Figure out (by hand, or by using an oracle: a test case
     #     that your instructor provided in the doc-string, or a
     #     known formula or an alternative implementation that you trust)
     #     the CORRECT (EXPECTED) answer for your test case.
-    #
+    #   ___
     #   Step 4: Write code that prints both the EXPECTED answer
     #     and the ACTUAL answer returned when you call the function.
     #     Follow the same form as in the test case we provided below.
@@ -258,8 +257,8 @@ def count_cosines_from(m, n, x):
     # -------------------------------------------------------------------------
     # TODO: 7. Implement and test this function.
     #   Note that you should write its TEST function first (above).
-    #
-    # IMPORTANT: As in previous problems in this session,
+    #  ___
+    #  IMPORTANT: As in previous problems in this session,
     #   you must NOT use the 2 or 3-parameter versions
     #   of the RANGE expression, if you happen to know them.
     # -------------------------------------------------------------------------
@@ -271,7 +270,7 @@ def run_test_sum_unit_fractions_from():
     # TODO: 8. Implement this TEST function.
     #   It TESTS the  sum_unit_fractions_from  function defined below.
     #   Include at least **   3   ** tests (we wrote one for you).
-    # Use the same 4-step process as for previous TEST functions.
+    #   Use the same 4-step process as for previous TEST functions.
     # -------------------------------------------------------------------------
     print()
     print('--------------------------------------------------')
@@ -285,8 +284,8 @@ def run_test_sum_unit_fractions_from():
     print('       actual:  ', answer)
 
     # -------------------------------------------------------------------------
-    # TO DO: 8 (continued).
-    # Below this comment, add 2 more test cases of your own choosing.
+    # TODO: 8 (continued).
+    #   Below this comment, add 2 more test cases of your own choosing.
     # -------------------------------------------------------------------------
 
 
@@ -309,10 +308,10 @@ def sum_unit_fractions_from(m, n):
     # -------------------------------------------------------------------------
     # TODO: 9. Implement and test this function.
     #   Note that you should write its TEST function first (above).
-    #
-    # IMPORTANT: As in previous problems in this session,
-    #   you must NOT use the 2 or 3-parameter versions
-    #   of the RANGE expression, if you happen to know them.
+    #  ___
+    #  IMPORTANT: As in previous problems in this session,
+    #    you must NOT use the 2 or 3-parameter versions
+    #    of the RANGE expression, if you happen to know them.
     # -------------------------------------------------------------------------
 
 

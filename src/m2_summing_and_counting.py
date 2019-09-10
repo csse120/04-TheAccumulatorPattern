@@ -35,19 +35,19 @@ def run_test_sum_more_cosines():
     # TODO: 2. Implement this TEST function.
     #   It TESTS the  sum_more_cosines  function defined below.
     #   Include at least **   3   ** tests (we wrote one for you).
-    #
-    # To implement this TEST function, use the same 4 steps as before:
-    #
+    #   ___
+    #   To implement this TEST function, use the same 4 steps as before:
+    #   ___
     #   Step 1: Read the doc-string of  sum_more_cosines  below.
     #     Understand what that function SHOULD return.
-    #
+    #   ___
     #   Step 2:  Pick a test case:  numbers that you could send as
     #     actual arguments to the  sum_more_cosines  function.
-    #
+    #   ___
     #   Step 3: Figure out (by hand/calculator, or by trusting
     #     a test case that your instructor provided in the doc-string)
     #     the CORRECT (EXPECTED) answer for your test case.
-    #
+    #   ___
     #   Step 4: Write code that prints both the EXPECTED answer
     #     and the ACTUAL answer returned when you call the function.
     #     Follow the same form as in the test case we provided below.
@@ -68,7 +68,7 @@ def run_test_sum_more_cosines():
 
     # -------------------------------------------------------------------------
     # TODO: 2 (continued).
-    # Below this comment, add 2 more test cases of your own choosing.
+    #   Below this comment, add 2 more test cases of your own choosing.
     # -------------------------------------------------------------------------
 
 
@@ -112,7 +112,7 @@ def run_test_count_sines_from():
     #   Include at least **   6   ** tests (we wrote one for you).
     #              ** Yes, 6 (six) tests. **
     #     ** Counting problems are harder to test than summing problems. **
-    # Use the same 4-step process as for previous TEST functions.
+    #   Use the same 4-step process as for previous TEST functions.
     # -------------------------------------------------------------------------
     print()
     print('--------------------------------------------------')
@@ -127,7 +127,7 @@ def run_test_count_sines_from():
 
     # -------------------------------------------------------------------------
     # TODO: 4 (continued).
-    # Below this comment, add 5 more test cases of your own choosing.
+    #   Below this comment, add 5 more test cases of your own choosing.
     # -------------------------------------------------------------------------
 
 
@@ -157,10 +157,10 @@ def count_sines_from(m, n):
     # -------------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
-    #
-    # IMPORTANT: As in previous problems in this session,
-    #   you must NOT use the 2 or 3-parameter versions
-    #   of the RANGE expression, if you happen to know them.
+    #  ___
+    #  IMPORTANT: As in previous problems in this session,
+    #    you must NOT use the 2 or 3-parameter versions
+    #    of the RANGE expression, if you happen to know them.
     # -------------------------------------------------------------------------
 
 
@@ -172,7 +172,7 @@ def run_test_count_sines_vs_cosines():
     #   Include at least **   6   ** tests (we wrote one for you).
     #              ** Yes, 6 (six) tests. **
     #     ** Counting problems are harder to test than summing problems. **
-    # Use the same 4-step process as for previous TEST functions.
+    #   Use the same 4-step process as for previous TEST functions.
     # -------------------------------------------------------------------------
     print()
     print('--------------------------------------------------')
@@ -187,7 +187,7 @@ def run_test_count_sines_vs_cosines():
 
     # -------------------------------------------------------------------------
     # TODO: 6 (continued).
-    # Below this comment, add 5 more test cases of your own choosing.
+    #   Below this comment, add 5 more test cases of your own choosing.
     # -------------------------------------------------------------------------
 
 

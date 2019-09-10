@@ -14,73 +14,73 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #   RUN this program, then READ its code.
 #     Then answer the following, GETTING HELP AS NEED!  (Ask questions!!!)
 #     Write your answers in any reasonable way (your choice).
-#
+#     ___
 #     For the first several questions, some students find the following
 #     picture helpful.  (Your instructor may explain it in whole-group.)
-#
+#     ___
 #         0  1  2  3  4  ...  r-1  r  r+1  r+2  r+3  ...  s
 #         |..... r numbers .....|
 #         |................ s+1 numbers ..................|
-# Hence:                          |... (s+1)-r numbers ...|
-#
+#  Hence:                          |... (s+1)-r numbers ...|
+#     ___
 #     a. If you want a loop that runs   r   times,
 #          which of the following three choices would you use?
-#
+#  ___
 #            for k in range(r - 1):
 #            for k in range(r):
 #            for k in range(r + 1):
-#
+#     ___
 #     b. If you want a loop that runs from 0 to s, inclusive,
 #          what expression would you use in the _____ below?
-#
+#  ___
 #            for k in range(_____):
-#
+#     ___
 #     c. If you want a loop that runs from r to s, inclusive, assuming s >= r,
 #          what expression would you use in the _____ below?
-#
+#  ___
 #            for k in range(_____):
-#
+#     ___
 #     d. If you want a loop that runs from (r + 4) to (s - 10),
 #          including the (r + 4) but not including the (s - 10),
 #          what expression would you use in the _____ below?
-#
+#  ___
 #            for k in range(_____):
-#
+#     ___
 #     e. The following code snippet attempts to return the number
 #          of integers from r to s, inclusive, whose cosines are positive.
 #          It has at least 5 distinct errors (one per line).
 #          Correct the errors.
-#
+#  ___
 #              for k in range(r - s):
 #                  count = 0
 #                  if math.cos(r) > 0:
 #                      count = 1
 #                  return count
-#
+#     ___
 #     f. The code in the "graphics accumulation" example below includes:
 #            for _ in range(n):
 #        What does the   _   (underscore) mean?
-#
+#     ___
 #     g. The code in the "graphics accumulation" example below includes:
-#
+#  ___
 #              x = starting_point.x
 #              for _ in range(n):
 #                  center = rg.Point(x, y)
 #                  circle = rg.Circle(point, radius)
 #                  circle.attach_to(window)
 #                  x = x + diameter
-#
+#  ___
 #        If you want the row-of-circles that the above creates,
 #        one of the following two attempts is a CORRECT attempt
 #        (i.e., is equivalent in its functionality to the above)
 #        and one is WRONG.  Which is the WRONG one?
-#
+#  ___
 #              x = starting_point.x
 #              for k in range(n):
 #                  center = rg.Point(x + (k * diameter), y)
 #                  circle = rg.Circle(point, radius)
 #                  circle.attach_to(window)
-#
+#  ___
 #              x = starting_point.x
 #              for k in range(n):
 #                  center = rg.Point(x + (k * diameter), y)

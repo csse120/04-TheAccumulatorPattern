@@ -99,11 +99,10 @@ def draw_parallel_lines(n, point, length, window):
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
-    #
-    # CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
-    #             as in   draw_row_of_circles   in m1e,
-    #             instead of directly using the loop variable.
-    #
+    #   ___
+    #   CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
+    #      as in   draw_row_of_circles   in m1e,
+    #      instead of directly using the loop variable.
     ###########################################################################
     # HINT: To figure out the code that computes the necessary
     #       endpoints for each line,
@@ -165,11 +164,10 @@ def draw_lines(n, point, window):
     # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
-    #
-    # CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
-    #             as in   draw_row_of_circles   in m1e,
-    #             instead of directly using the loop variable.
-    #
+    #  ___
+    #  CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
+    #      as in   draw_row_of_circles   in m1e,
+    #      instead of directly using the loop variable.
     ###########################################################################
     # HINT: To figure out the code that computes the necessary
     #       endpoints for each line,

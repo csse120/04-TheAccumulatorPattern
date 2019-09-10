@@ -100,11 +100,10 @@ def draw_squares_from_circle(n, circle, window):
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
-    #
-    # CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
-    #             as in   draw_row_of_circles   in m1e,
-    #             instead of directly using the loop variable.
-    #
+    #  ___
+    #  CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
+    #      as in   draw_row_of_circles   in m1e,
+    #      instead of directly using the loop variable.
     ###########################################################################
     # HINT: To figure out the code that computes the necessary
     #       positions of each square,
@@ -127,7 +126,6 @@ def run_test_draw_circles_from_rectangle():
     #   defined below.  Include at least **   3   ** tests, of which
     #      ***  at least TWO tests are on ONE window and
     #      ***  at least ONE test is on a DIFFERENT window.
-    #
     ###########################################################################
     # HINT: Consider using the same test cases as suggested by the
     #   pictures in  draw_circles_from_rectangle.pdf   in this project.
@@ -178,11 +176,10 @@ def draw_circles_from_rectangle(m, n, rectangle, window):
     # -------------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
-    #
-    # CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
-    #             as in   draw_row_of_circles   in m1e,
-    #             instead of directly using the loop variable.
-    #
+    #  ___
+    #  CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
+    #      as in   draw_row_of_circles   in m1e,
+    #      instead of directly using the loop variable.
     ###########################################################################
     # HINT: To figure out the code that computes the necessary
     #       positions of each circle,
@@ -270,11 +267,10 @@ def draw_lines_from_rectangles(rectangle1, rectangle2, n, window):
     # -------------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
     #          Tests have been written for you (above).
-    #
-    # CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
-    #             as in   draw_row_of_circles   in m1e,
-    #             instead of directly using the loop variable.
-    #
+    #  ___
+    #  CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
+    #      as in   draw_row_of_circles   in m1e,
+    #      instead of directly using the loop variable.
     ###########################################################################
     # HINT: To figure out the code that computes the necessary
     #       endpoints for each line,
