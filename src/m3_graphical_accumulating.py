@@ -90,10 +90,11 @@ def draw_parallel_lines(n, point, length, window):
       Must  ** render **     but   ** NOT close **   the window.
 
     Type hints:
-      :type n: int
-      :type point: rg.Point
+      :type n:      int
+      :type point:  rg.Point
       :type length: int
       :type window: rg.RoseWindow
+      :rtype: None
     """
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
@@ -156,9 +157,10 @@ def draw_lines(n, point, window):
       Must  ** render **     but   ** NOT close **   the window.
 
     Type hints:
-      :type n: int
-      :type point: rg.Point
+      :type n:      int
+      :type point:  rg.Point
       :type window: rg.RoseWindow
+      :rtype: None
     """
     # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.

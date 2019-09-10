@@ -85,6 +85,10 @@ def sum_more_cosines(m, n):
       -- sum_more_cosines(-4, 1)  returns
             cos(-4) + cos(-3) + cos(-2) + cos(-1) + cos(0) + cos(1)
          which is approximately 0.02082.
+    Type hints:
+      :type m: int
+      :type n: int
+      :rtype:  float
     """
     # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
@@ -145,6 +149,10 @@ def count_sines_from(m, n):
       -- count_sines_from(4, 6)  returns  3
       -- count_sines_from(7, 7)  returns  0
       -- count_sines_from(9, 9)  returns  1
+    Type hints:
+      :type m: int
+      :type n: int
+      :rtype:  int
     """
     # -------------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
@@ -207,6 +215,9 @@ def count_sines_vs_cosines(m):
       -- count_sines_vs_cosines(0) returns 0
       -- count_sines_vs_cosines(1) returns 1
       -- Also:  count_sines_vs_cosines(101) returns 100 (trust me!)
+    Type hints:
+      :type m: int
+      :rtype:  int
     """
     # -------------------------------------------------------------------------
     # TODO: 7. Implement and test this function.

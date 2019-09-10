@@ -99,8 +99,8 @@ def run_test_sum_from():
 #     -- what a FORMULA answer is
 #     -- how the above are used in testing
 #   THEN:
-# CHANGE THE TO DO at the beginning of this comment to DONE.
-# There is no code to be written for this TO DO (just reading).
+# CHANGE THE _TODO_ at the beginning of this comment to DONE.
+# There is no code to be written for this _TODO_ (just reading).
 # -----------------------------------------------------------------------------
 
 
@@ -112,6 +112,10 @@ def sum_from(m, n):
     Side effects:   None.
     Example:
         sum_from(6, 9) returns 6 + 7 + 8 + 9, that is, 30.
+    Type hints:
+      :type m: int
+      :type n: int
+      :rtype:  int
     """
     # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
@@ -157,7 +161,7 @@ def run_test_factorial():
     print('       actual (from my code): ', answer_from_my_code)
 
     # -------------------------------------------------------------------------
-    # TO DO: 4 (continued).
+    # TODO: 4 (continued).
     # Below this comment, add 3 more test cases, at least two of which
     #   ** uses  math.factorial  as an ORACLE for testing. **
     # -------------------------------------------------------------------------
@@ -171,6 +175,9 @@ def factorial(n):
     Examples:
         factorial(5) returns 5 x 4 x 3 x 2 x 1, that is, 120.
         factorial(0) returns 1 (by definition).
+    Type hints:
+      :type n: int
+      :rtype:  int
     """
     # -------------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
@@ -219,14 +226,14 @@ def run_test_count_cosines_from():
     print('       actual:  ', answer)
 
     # -------------------------------------------------------------------------
-    # TO DO: 6 (continued).
+    # TODO: 6 (continued).
     # Below this comment, add 5 more test cases of your own choosing.
     # -------------------------------------------------------------------------
 
 
 def count_cosines_from(m, n, x):
     """
-    What comes in:  The three arguments are non-negative integers
+    What comes in:  The three arguments are two non-negative integers
       m and n, with m <= n, and a number x.
     What goes out:  Returns the number of integers from m to n,
       inclusive, whose cosine is greater than x.
@@ -242,6 +249,11 @@ def count_cosines_from(m, n, x):
       -- count_cosines_from(3, 9, 0.29)  returns  2
       -- count_cosines_from(3, 9, 0.27)  returns  3
       -- count_cosines_from(4, 8, -0.5)  returns  4
+    Type hints:
+      :type m: int
+      :type n: int
+      :type x: int | float
+      :rtype:  int
     """
     # -------------------------------------------------------------------------
     # TODO: 7. Implement and test this function.
@@ -289,6 +301,10 @@ def sum_unit_fractions_from(m, n):
             1/6 + 1/7 + 1/8 + 1/9
          which is about 0.545635
       -- sum_unit_fractions_from(10, 9000)  returns about  6.853
+    Type hints:
+      :type m: int
+      :type n: int
+      :rtype:  float
     """
     # -------------------------------------------------------------------------
     # TODO: 9. Implement and test this function.

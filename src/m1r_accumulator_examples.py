@@ -48,7 +48,8 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #
 #     e. The following code snippet attempts to return the number
 #          of integers from r to s, inclusive, whose cosines are positive.
-#          It has at least 5 distinct errors (one per line).  What are they?
+#          It has at least 5 distinct errors (one per line).
+#          Correct the errors.
 #
 #              for k in range(r - s):
 #                  count = 0
@@ -148,6 +149,9 @@ def summing_example(n):
       -- If the integer is 4,
            this function returns (1 + 8 + 27 + 64), which is 100.
       -- If the integer is 20, this function returns 44,100.
+    Type hints:
+      :type n: int
+      :rtype: int
     """
     total = 0  # Initialize to 0 BEFORE the loop
     for k in range(n):  # Loop
@@ -200,6 +204,9 @@ def counting_example(n):
 
       -- counting_example(0) returns 1
              since the cosine(0) is positive.
+    Type hints:
+      :type n: int
+      :rtype: int
     """
     count = 0  # Initialize to 0 BEFORE the loop
     for k in range(n + 1):  # Loop
