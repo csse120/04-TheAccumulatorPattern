@@ -18,7 +18,6 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 import math
 import builtins  # Never necessary, but here for pedagogical reasons
 
-
 # -----------------------------------------------------------------------------
 # Students: As you work each of these problems, ask yourself:
 #   1. Do I need a loop?
@@ -29,6 +28,19 @@ import builtins  # Never necessary, but here for pedagogical reasons
 #        -- IN the loop?
 #        -- AFTER the loop?
 # -----------------------------------------------------------------------------
+
+##############################################################################
+# TODO: 2. Read the following, then change its _TODO_ to DONE.
+#   Throughout these exercises, you must use  RANGE  statements.
+#   At this point of the course, you are restricted to the SINGLE-ARGUMENT
+#   form of RANGE statements, like this:
+#      range(blah):
+#   There is a MULTIPLE-ARGUMENT form of RANGE statements (e.g. range(a, b))
+#   but you are NOT permitted to use the MULTIPLE-ARGUMENT form yet,
+#   for pedagogical reasons.
+###############################################################################
+
+
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_sum_from()
@@ -90,7 +102,7 @@ def run_test_sum_from():
     print('       actual (from my code):  ', answer_from_my_code)
 
 # -----------------------------------------------------------------------------
-# TODO: 2.
+# TODO: 3.
 #   When you have READ the above  run_test_sum_from  function,
 #   asking questions as needed, and you feel that you (mostly, at least)
 #   understand it, and you feel that you understand from the example:
@@ -118,7 +130,7 @@ def sum_from(m, n):
       :rtype:  int
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
     #  ___
     #  IMPORTANT:  Your solution MUST
@@ -133,7 +145,7 @@ def sum_from(m, n):
 def run_test_factorial():
     """ Tests the   factorial   function. """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement this TEST function.
+    # TODO: 5. Implement this TEST function.
     #   It TESTS the  factorial  function defined below.
     #   Include at least **   5   ** tests (we wrote two for you).
     ###########################################################################
@@ -160,7 +172,7 @@ def run_test_factorial():
     print('       actual (from my code): ', answer_from_my_code)
 
     # -------------------------------------------------------------------------
-    # TODO: 4 (continued).
+    # TODO: 5 (continued).
     #   Below this comment, add 3 more test cases, at least two of which
     #     ** uses  math.factorial  as an ORACLE for testing. **
     # -------------------------------------------------------------------------
@@ -179,7 +191,7 @@ def factorial(n):
       :rtype:  int
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # TODO: 6. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #  ___
     #  IMPORTANT:  Your solution MUST
@@ -190,7 +202,7 @@ def factorial(n):
 def run_test_count_cosines_from():
     """ Tests the   count_cosines_from   function. """
     # -------------------------------------------------------------------------
-    # TODO: 6. Implement this TEST function.
+    # TODO: 7. Implement this TEST function.
     #   It TESTS the  count_cosines_from  function defined below.
     #   Include at least **   6   ** tests (we wrote one for you).
     #              ** Yes, 6 (six) tests. **
@@ -225,7 +237,7 @@ def run_test_count_cosines_from():
     print('       actual:  ', answer)
 
     # -------------------------------------------------------------------------
-    # TODO: 6 (continued).
+    # TODO: 7 (continued).
     # Below this comment, add 5 more test cases of your own choosing.
     # -------------------------------------------------------------------------
 
@@ -255,7 +267,7 @@ def count_cosines_from(m, n, x):
       :rtype:  int
     """
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # TODO: 8. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #  ___
     #  IMPORTANT: As in previous problems in this session,
@@ -267,7 +279,7 @@ def count_cosines_from(m, n, x):
 def run_test_sum_unit_fractions_from():
     """ Tests the   sum_unit_fractions_from   function. """
     # -------------------------------------------------------------------------
-    # TODO: 8. Implement this TEST function.
+    # TODO: 9. Implement this TEST function.
     #   It TESTS the  sum_unit_fractions_from  function defined below.
     #   Include at least **   3   ** tests (we wrote one for you).
     #   Use the same 4-step process as for previous TEST functions.
@@ -284,7 +296,7 @@ def run_test_sum_unit_fractions_from():
     print('       actual:  ', answer)
 
     # -------------------------------------------------------------------------
-    # TODO: 8 (continued).
+    # TODO: 9 (continued).
     #   Below this comment, add 2 more test cases of your own choosing.
     # -------------------------------------------------------------------------
 
@@ -306,7 +318,7 @@ def sum_unit_fractions_from(m, n):
       :rtype:  float
     """
     # -------------------------------------------------------------------------
-    # TODO: 9. Implement and test this function.
+    # TODO: 10. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #  ___
     #  IMPORTANT: As in previous problems in this session,

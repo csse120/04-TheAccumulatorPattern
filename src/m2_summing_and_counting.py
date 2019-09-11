@@ -11,7 +11,6 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
          Derek Whitley, their colleagues, and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
-
 # -----------------------------------------------------------------------------
 # Students: As you work each of these problems, ask yourself:
 #   1. Do I need a loop?
@@ -22,6 +21,18 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #        -- IN the loop?
 #        -- AFTER the loop?
 # -----------------------------------------------------------------------------
+
+##############################################################################
+# TODO: 2. Read the following, then change its _TODO_ to DONE.
+#   Throughout these exercises, you must use  RANGE  statements.
+#   At this point of the course, you are restricted to the SINGLE-ARGUMENT
+#   form of RANGE statements, like this:
+#      range(blah):
+#   There is a MULTIPLE-ARGUMENT form of RANGE statements (e.g. range(a, b))
+#   but you are NOT permitted to use the MULTIPLE-ARGUMENT form yet,
+#   for pedagogical reasons.
+###############################################################################
+
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_sum_more_cosines()
@@ -32,7 +43,7 @@ def main():
 def run_test_sum_more_cosines():
     """ Tests the   sum_more_cosines   function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
+    # TODO: 3. Implement this TEST function.
     #   It TESTS the  sum_more_cosines  function defined below.
     #   Include at least **   3   ** tests (we wrote one for you).
     #   ___
@@ -67,7 +78,7 @@ def run_test_sum_more_cosines():
         print('       actual:  ', answer)
 
     # -------------------------------------------------------------------------
-    # TODO: 2 (continued).
+    # TODO: 3 (continued).
     #   Below this comment, add 2 more test cases of your own choosing.
     # -------------------------------------------------------------------------
 
@@ -91,7 +102,7 @@ def sum_more_cosines(m, n):
       :rtype:  float
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # TODO: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #   That is called TEST-DRIVEN DEVELOPMENT (TDD).
     #
@@ -107,7 +118,7 @@ def sum_more_cosines(m, n):
 def run_test_count_sines_from():
     """ Tests the   count_sines_from   function. """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement this TEST function.
+    # TODO: 5. Implement this TEST function.
     #   It TESTS the  count_sines_from  function defined below.
     #   Include at least **   6   ** tests (we wrote one for you).
     #              ** Yes, 6 (six) tests. **
@@ -126,7 +137,7 @@ def run_test_count_sines_from():
     print('       actual:  ', answer)
 
     # -------------------------------------------------------------------------
-    # TODO: 4 (continued).
+    # TODO: 5 (continued).
     #   Below this comment, add 5 more test cases of your own choosing.
     # -------------------------------------------------------------------------
 

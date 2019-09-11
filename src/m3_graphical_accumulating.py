@@ -14,7 +14,6 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 
 import rosegraphics as rg
 
-
 # -----------------------------------------------------------------------------
 # Students: As you work each of these problems, ask yourself:
 #   1. Do I need a loop?
@@ -25,6 +24,19 @@ import rosegraphics as rg
 #        -- IN the loop?
 #        -- AFTER the loop?
 # -----------------------------------------------------------------------------
+
+##############################################################################
+# TODO: 2. Read the following, then change its _TODO_ to DONE.
+#   Throughout these exercises, you must use  RANGE  statements.
+#   At this point of the course, you are restricted to the SINGLE-ARGUMENT
+#   form of RANGE statements, like this:
+#      range(blah):
+#   There is a MULTIPLE-ARGUMENT form of RANGE statements (e.g. range(a, b))
+#   but you are NOT permitted to use the MULTIPLE-ARGUMENT form yet,
+#   for pedagogical reasons.
+###############################################################################
+
+
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_draw_parallel_lines()
@@ -97,7 +109,7 @@ def draw_parallel_lines(n, point, length, window):
       :rtype: None
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     #   ___
     #   CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
@@ -162,7 +174,7 @@ def draw_lines(n, point, window):
       :rtype: None
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
     #  ___
     #  CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,

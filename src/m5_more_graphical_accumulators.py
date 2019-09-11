@@ -14,7 +14,6 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 
 import rosegraphics as rg
 
-
 # -----------------------------------------------------------------------------
 # Students: As you work each of these problems, ask yourself:
 #   1. Do I need a loop?
@@ -25,6 +24,19 @@ import rosegraphics as rg
 #        -- IN the loop?
 #        -- AFTER the loop?
 # -----------------------------------------------------------------------------
+
+##############################################################################
+# TODO: 2. Read the following, then change its _TODO_ to DONE.
+#   Throughout these exercises, you must use  RANGE  statements.
+#   At this point of the course, you are restricted to the SINGLE-ARGUMENT
+#   form of RANGE statements, like this:
+#      range(blah):
+#   There is a MULTIPLE-ARGUMENT form of RANGE statements (e.g. range(a, b))
+#   but you are NOT permitted to use the MULTIPLE-ARGUMENT form yet,
+#   for pedagogical reasons.
+###############################################################################
+
+
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_draw_squares_from_circle()
@@ -98,7 +110,7 @@ def draw_squares_from_circle(n, circle, window):
       :type window: rg.RoseWindow
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     #  ___
     #  CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
@@ -121,7 +133,7 @@ def run_test_draw_circles_from_rectangle():
     print('--------------------------------------------------')
 
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement this TEST function.
+    # TODO: 4. Implement this TEST function.
     #   It TESTS the  draw_circles_from_rectangle  function
     #   defined below.  Include at least **   3   ** tests, of which
     #      ***  at least TWO tests are on ONE window and
@@ -174,7 +186,7 @@ def draw_circles_from_rectangle(m, n, rectangle, window):
       :type window:    rg.RoseWindow
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # TODO: 5. Implement and test this function.
     #          Tests have been written for you (above).
     #  ___
     #  CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
@@ -265,7 +277,7 @@ def draw_lines_from_rectangles(rectangle1, rectangle2, n, window):
       :type window:     rg.RoseWindow
       """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # TODO: 6. Implement and test this function.
     #          Tests have been written for you (above).
     #  ___
     #  CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,

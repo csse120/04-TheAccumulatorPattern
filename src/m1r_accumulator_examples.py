@@ -8,9 +8,20 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
          Derek Whitley, their colleagues, and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+##############################################################################
+# TODO: 2. Read the following, then change its _TODO_ to DONE.
+#   Throughout these exercises, you must use  RANGE  statements.
+#   At this point of the course, you are restricted to the SINGLE-ARGUMENT
+#   form of RANGE statements, like this:
+#      range(blah):
+#   There is a MULTIPLE-ARGUMENT form of RANGE statements (e.g. range(a, b))
+#   but you are NOT permitted to use the MULTIPLE-ARGUMENT form yet,
+#   for pedagogical reasons.
+###############################################################################
+
 ###############################################################################
 #
-# TODO: 2.
+# TODO: 3.
 #   RUN this program, then READ its code.
 #     Then answer the following, GETTING HELP AS NEED!  (Ask questions!!!)
 #     Write your answers in any reasonable way (your choice).
